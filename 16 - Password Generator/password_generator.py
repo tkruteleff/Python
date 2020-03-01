@@ -15,23 +15,23 @@ chars += list(range(ord('!'),ord('&')+1))
 dictionary = ["word", "input", "list", "end", "order", "rock", "paper", "scissors"]
 password = ""
 
-passwordStrength = str(input("Do you want a weak or strong password? "))
+password_strength = str(input("Do you want a weak or strong password? "))
 
-def generateWeak(list):
+def generate_weak(list):
     generated = random.choices(dictionary, k=2)
 
     return (password.join(generated))
 
-def generateStrong(keys):
+def generate_strong(keys):
     key = []
     for i in range(16):
         key.append(chr(keys[random.randint(0,len(keys)-1)]))
 
     return (password.join(key))
 
-if passwordStrength == "weak":
-    print(generateWeak(dictionary))
-elif passwordStrength == "strong":
-    print(generateStrong(chars))
+if password_strength == "weak":
+    print(generate_weak(dictionary))
+elif password_strength == "strong":
+    print(generate_strong(chars))
 else:
     print("sigh")

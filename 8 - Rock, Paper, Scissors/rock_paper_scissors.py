@@ -1,5 +1,5 @@
-p1Input = str(input("Player 1 choose either rock, paper or scissors: "))
-p2Input = str(input("Player 2 choose either rock, paper or scissors: "))
+p1_input = str(input("Player 1 choose either rock, paper or scissors: "))
+p2_input = str(input("Player 2 choose either rock, paper or scissors: "))
 
 def compare(p1, p2):
     if p1 == p2:
@@ -22,4 +22,4 @@ def compare(p1, p2):
     else:
         sys.exit()
 
-print(compare(p1Input, p2Input))
+print(compare(p1_input, p2_input))

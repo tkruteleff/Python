@@ -1,14 +1,14 @@
 word = str(input("Type in a word "))
-wordList = []
-reverseWordList = []
+word_list = []
+reverse_word_list = []
 
 for a in word:
-    wordList.append(a)
+    word_list.append(a)
     print("One letter " + a)
 
-reverseWordList = wordList[::-1]
+reverse_word_list = word_list[::-1]
 
-if(wordList == reverseWordList):
+if(word_list == reverse_word_list):
     print("Word is a palindrome")
 else:
     print("Word is not a palindrom")

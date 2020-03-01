@@ -1,4 +1,4 @@
-def genFibonacci(number_count):
+def gen_fibonacci(number_count):
     count = int(input(number_count))
     num1 = 0
     num2 = 1
@@ -10,4 +10,4 @@ def genFibonacci(number_count):
 
     print(sequence)
 
-fibonacciLength = genFibonacci("Give a number: ")
+fibonacci_length = gen_fibonacci("Give a number: ")
